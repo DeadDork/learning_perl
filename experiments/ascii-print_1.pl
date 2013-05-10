@@ -13,7 +13,7 @@ use warnings;
 # Main
 
 print "+----+---+\n";
-for (my $e = 0; $e < 26; ++$e) {
-	printf "| %2d | %c |\n", $e, ord ('A') + $e;
+for (my $e = 1; $e < 27; ++$e) {
+	printf "| %2d | %c |\n", $e, ord ('A') + ($e - 1);
 }
 print "+----+---+\n";
