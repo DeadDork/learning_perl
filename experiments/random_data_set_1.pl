@@ -1,4 +1,4 @@
-# Creates a dummy data set.
+# Creates a dummy data set in CSV format.
 
 # Header {{{
 use strict;
@@ -8,7 +8,7 @@ use 5.12.04;
 
 # Subroutines {{{
 sub check_arguments {
-	return 0 unless $#ARGV > -1;
+	return 0 unless $#ARGV == 1;
 	return 0 unless $ARGV[0] =~ /^\d+$/;
 	return 0 unless $ARGV[1] =~ /^\d+$/;
 	return 1;
